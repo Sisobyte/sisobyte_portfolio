@@ -70,6 +70,41 @@
     .proj-body{padding:12px}
     .stack{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .badge{padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700;font-size:13px}
+    
+    .more-text {
+        display: none;
+      }
+      .more-text.show {
+        display: inline;
+      }
+      .toggle-btn {
+  margin-top: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid rgba(61, 220, 132, 0.4);
+  background: rgba(61, 220, 132, 0.08);
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.toggle-btn:hover {
+  background: rgba(61, 220, 132, 0.18);
+  transform: translateY(-2px);
+}
+
+.toggle-btn:active {
+  transform: translateY(0);
+}
+
+.toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(61, 220, 132, 0.25);
+}
+
+
 
     /* Testimonials */
     .testimonials{position:relative}
@@ -257,7 +292,7 @@
             <div style="font-weight:800">Quick facts</div>
             <div class="muted" style="margin-top:8px;font-size:14px">Available for remote work • Based in Nigeria • Open to freelance & mentoring</div>
             <div style="display:flex;gap:12px;margin-top:12px">
-              <div class="card center" style="padding:10px;border-radius:8px">30+</div>
+              <div class="card center" style="padding:10px;border-radius:8px">15+</div>
               <div style="flex:1">
                 <div style="font-weight:800">Projects shipped</div>
                 <div class="muted" style="font-size:13px">Design, frontend and small apps</div>
@@ -307,15 +342,22 @@
           <img class="thumb" src="image/siver1.png" alt="project">
           <div class="proj-body">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <div style="font-weight:800">Studio Booking UI</div>
+              <div style="font-weight:800">Photography studio website</div>
               <div class="badge"> <a href="https://silverphotostudio.netlify.app" target="_blank" class="badge" style="text-decoration:none;color:inherit">Live</a></div>
             </div>
-            <p class="muted" style="margin-top:8px">A modern photo studio booking website UI built with HTML, CSS, and JavaScript.</p>
+            <p class="muted" style="margin-top:8px">Silver is a modern photography studio portfolio website built with HTML, CSS, and vanilla JavaScript. The site showcases the studio’s work, introduces the team, provides information about the business, and includes a contact form for client inquiries.
+               <span class="more-text"> silver is a business portfolio website for a photostudio
+              This project is one of my early works as a self-taught frontend developer and helped me gain practical experience with DOM manipulation, event listeners, and JavaScript functions to add interactivity.
+            </span> </p>
+             <button class="toggle-btn">Read more</button>
             <div class="stack" style="margin-top:10px">
               <div class="badge">HTML</div>
               <div class="badge">CSS</div>
               <div class="badge">JS</div>
             </div>
+           
+                
+
           </div>
         </article>
 
@@ -326,7 +368,11 @@
               <div style="font-weight:800">Landing Page Design</div>
               <div class="badge"> <a href="https://silverlandingpage.netlify.app" target="_blank" class="badge" style="text-decoration:none;color:inherit">Live</a></div>
             </div>
-            <p class="muted" style="margin-top:8px">A sleek landing page built with responsive layouts and subtle animations.</p>
+            <p class="muted" style="margin-top:8px"> A sleek landing page built with responsive layouts and subtle animations. This project was designed to promote a discounted service offering for Silver Photo Studio, focusing on clear messaging, visual hierarchy, and user engagement.
+              <span class="more-text"> This project is one of my early practical works as a self-taught frontend developer and helped me understand the structural differences between a landing page and a portfolio website.</span>
+            </p>
+             <button class="toggle-btn">Read more</button>
+
             <div class="stack" style="margin-top:10px">
               <div class="badge">HTML</div>
               <div class="badge">CSS</div>
@@ -339,10 +385,18 @@
           <img class="thumb" src="image/daz1.png" alt="project">
           <div class="proj-body">
             <div style="display:flex;justify-content:space-between;align-items:center">
-              <div style="font-weight:800">Dazzle Brand Website</div>
-              <div class="badge"><a href="https://dazzlebrand.netlify.app" target="_blank" class="badge" style="text-decoration:none;color:inherit">Live</a></div>
+              <div style="font-weight:800">Dazzel Brand Website</div>
+              <div class="badge"><a href="https://thedazzlebrand.netlify.app/" target="_blank" class="badge" style="text-decoration:none;color:inherit">Live</a></div>
             </div>
-            <p class="muted" style="margin-top:8px">A stunning brand website showcasing products with a modern design.  </p>
+            <p class="muted" style="margin-top:8px">A brand-focused website built for 
+              DazzelBrand, a personal shopping and styling business, designed to highlight 
+              products, services, and brand identity while making client inquiries seamless. It was developed for a real client and was built with HTML, CSS and Vanilla Javascript
+            <span class="more-text">As my first client project, this experience helped me learn
+               how to communicate with clients, gather requirements, and turn ideas into 
+               functional web solutions. The project focuses on visual clarity,
+                brand consistency, and responsive design to ensure a professional online presence.</span>  
+            </p>
+            <button class="toggle-btn">Read more</button>
             <div class="stack" style="margin-top:10px">
               <div class="badge">HTML</div>
               <div class="badge">CSS</div>
@@ -350,6 +404,89 @@
             </div>
           </div>
         </article>
+
+        <article class="project">
+          <img class="thumb" src="image/ap1.png" alt="project">
+          <div class="proj-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="font-weight:800">Deleo Booking Website</div>
+              <div class="badge"><a href="#" target="_blank" class="badge" style="text-decoration:none;color:inherit">ongoing Project</a></div>
+            </div>
+            <p class="muted" style="margin-top:8px">Deleo Apartment is a modern, responsive client-facing website built to showcase apartment units, amenities, and property details.
+            <span class="more-text">This was one of my first projects 
+              built with React and Tailwind CSS for a real client, giving me 
+              practical experience in component-based development, responsive design, 
+              and translating client requirements into a polished web solution. 
+              The project helped me gain a deeper understanding of React’s workflow, styling with Tailwind, 
+              and creating interactive, user-friendly interfaces.</span>  
+            </p>
+            <button class="toggle-btn">Read more</button>
+            <div class="stack" style="margin-top:10px">
+              <div class="badge">React.js</div>
+              <div class="badge">Tailwind CSS</div>
+              <div class="badge">Node.js</div> 
+              <div class="badge">MongoDB</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="thumb" src="image/login1.png" alt="project">
+          <div class="proj-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="font-weight:800">Deleo Admin Dashboard</div>
+              <div class="badge"><a href="#" target="_blank" class="badge" style="text-decoration:none;color:inherit">ongoing project</a></div>
+            </div>
+            <p class="muted" style="margin-top:8px">Deleo Apartment Admin Dashboard is a web-based management system designed to work alongside the Deleo Apartment booking website. It allows the client to manage apartment listings, 
+              track bookings, checkin/checkoutguest and oversee inquiries from tenants or potential clients.
+            <span class="more-text">This project is built with React.js, Tailwind CSS, JavaScript, Node.js and Monogodb, focusing on interactive dashboards, responsive layouts, and data visualization to provide a smooth user experience for administrators.
+            Working on this dashboard gave me hands-on experience with state 
+            management, CRUD operations, dynamic data handling, and connecting a 
+            frontend interface with a real client-facing website.</span>  
+            </p>
+            <button class="toggle-btn">Read more</button>
+            <div class="stack" style="margin-top:10px">
+              <div class="badge">React.js</div>
+              <div class="badge">Tailwind CSS</div>
+              <div class="badge">Node.js</div> 
+              <div class="badge">MongoDB</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img class="thumb" src="image/tailor1.png" alt="project">
+          <div class="proj-body">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="font-weight:800">Team Based Project</div>
+              <div class="badge"><a href="#" target="_blank" class="badge" style="text-decoration:none;color:inherit">ongoing project</a></div>
+            </div>
+            <p class="muted" style="margin-top:8px">Stich flow is team work project  an ongoing mobile application designed to connect tailors with clients. The app allows tailors to showcase their work, clients to browse posts, comment, chat,
+               and enables tailors to track client requests.
+            <span class="more-text">I am in charge of frontend development, building the mobile interface using React Native and Tailwind CSS. This role has given me valuable experience working in a team environment, collaborating on features, and aligning my work with the overall project vision and MVP goals.
+
+Through this project, I’ve learned to:
+
+Translate client and team requirements into functional, user-friendly interfaces.
+
+Apply MVP thinking to focus on delivering the most important features first.
+
+Work collaboratively with backend developers, designers, and other team members.
+
+Use logical and structured problem-solving to build scalable and maintainable frontend code.
+
+Integrate real-time features and dynamic content while ensuring performance and responsiveness.
+
+This project is helping me grow as a frontend developer while gaining hands-on experience in full-stack mobile development, teamwork, and product-focused thinking.</span>  
+            </p>
+            <button class="toggle-btn">Read more</button>
+            <div class="stack" style="margin-top:10px">
+              <div class="badge">React Native</div>
+              <div class="badge">Tailwind CSS</div>
+            </div>
+          </div>
+        </article>
+        
       </div>
     </section>
 
@@ -525,6 +662,32 @@
         if(nav && !nav.contains(e.target) && e.target !== menuBtn) nav.style.display='none';
       }
     });
+
+    // the project more-text btn 
+//     const btn = document.querySelector(".toggle-btn");
+//     const text = document.querySelector(".more-text");
+
+//     btn.addEventListener("click", () => {
+//     text.classList.toggle("show");
+
+//   btn.textContent = text.classList.contains("show")
+//     ? "Read less"
+//     : "Read more";
+// });
+document.querySelectorAll(".toggle-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const project = btn.closest(".project");
+    const text = project.querySelector(".more-text");
+
+    text.classList.toggle("show");
+
+    btn.textContent = text.classList.contains("show")
+      ? "Read less"
+      : "Read more";
+  });
+});
+
+
   </script>
 
   <script>
